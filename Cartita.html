@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="envelope">
+        <div class="card-container">
+            <div class="card" id="birthdayCard">
+                <div class="card-face card-front">
+                    <img src="/archivos/carmencita.webp" alt="Foto de Carmencita">
+                    <div class="flowers">🌸🌷🌹🌻🌼🌺</div>
+                    <h1>Feliz Cumpleaños, Carmencita!</h1>
+                    <div class="bts-icons">💜🎵</div>
+                </div>
+                <div class="card-face card-back">
+                    <h1>Feliz Cumpleaños, Carmencita!</h1>
+                    <p class="message">
+                        Aparte de ser un día especial, sabes perfectamente que tú, para mí eres una persona increíble, tu carita preciosa llena mis días de felicidad, y el solo hecho de tu existencia mejora todos mis días, gracias por dejarme ser parte de tu vida, por darme la oportunidad de estar en una fecha tan especial, ¡ABRAZOS Y BESITOS PARA LA CUMPLEAÑERA!
+                    </p>
+                    <div class="flowers">🌸🌷🌹🌻🌼🌺</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="openSound" src="/archivos/bts.mp3" preload="auto"></audio>
+
+    <script>
+        document.getElementById('birthdayCard').addEventListener('click', function() {
+            this.classList.toggle('is-flipped');
+            document.getElementById('openSound').play();
+        });
+    </script>
+</body>
+</html>
