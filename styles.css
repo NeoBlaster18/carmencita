@@ -11,19 +11,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fdf5e6; /* Color sólido pastel */
+    background-color: #fdf5e6;
 }
 
 .card-container {
     perspective: 1000px;
     width: 100%;
-    max-width: 400px; /* Aumentado el tamaño máximo */
+    max-width: 100%; /* Asegura que se ajuste bien a la pantalla */
+    padding: 10px;
 }
 
 .card {
     width: 100%;
-    max-width: 400px; /* Aumentado el tamaño máximo */
-    height: 500px; /* Aumentado la altura */
+    max-width: 400px;
+    height: 600px; /* Aumentado la altura */
     transition: transform 0.6s;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -65,33 +66,33 @@ body {
 }
 
 .flowers {
-    font-size: 30px;
+    font-size: 35px; /* Ajustado el tamaño para ser más grande */
     color: #ff69b4;
     margin: 10px 0;
 }
 
 .message {
-    font-family: 'Pacifico', cursive; /* Nueva fuente */
-    font-size: 20px; /* Tamaño ajustado */
+    font-family: 'Pacifico', cursive;
+    font-size: 22px; /* Tamaño ajustado para ser más grande */
 }
 
 .bts-icons {
-    font-size: 24px;
+    font-size: 28px; /* Tamaño ajustado para ser más grande */
     margin-top: 10px;
 }
 
 @media (max-width: 600px) {
     .card {
-        height: auto;
+        height: 100%;
     }
     .flowers {
-        font-size: 24px;
+        font-size: 30px; /* Tamaño ajustado para ser más grande */
     }
     .message {
-        font-size: 18px;
+        font-size: 20px; /* Tamaño ajustado para ser más grande */
     }
     .bts-icons {
-        font-size: 20px;
+        font-size: 25px; /* Tamaño ajustado para ser más grande */
     }
 }
 
